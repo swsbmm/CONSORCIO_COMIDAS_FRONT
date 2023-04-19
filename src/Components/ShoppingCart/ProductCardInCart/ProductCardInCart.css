@@ -1,0 +1,174 @@
+.productCardInCart {
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  align-items: center;
+  background-color: var(--colorDivInfo);
+  border-radius: 20px;
+  color: var(--colorTextBlack);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: space-evenly;
+  margin: max(1vw, 10px);
+  padding: 5px;
+}
+.productCardInCart .productName {
+  align-items: center;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  margin-bottom: 5px;
+  padding: 10px 0;
+  text-align: center;
+  width: 90%;
+}
+.productCardInCart .productName h3 {
+  text-align: center;
+  width: 80%;
+}
+.productCardInCart .productName button.productClearProduct {
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  align-self: flex-start;
+  background-color: var(--colorOldRed);
+  border-radius: 50%;
+  color: var(--colorNavWhite);
+  display: flex;
+  justify-self: right;
+  margin-right: 5px;
+  padding: 5px;
+}
+.productCardInCart .productFullDescription {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  min-height: 160px;
+  width: 90%;
+}
+.productCardInCart .productFullDescription .productImage {
+  align-items: center;
+  background-color: var(--colorOldRed);
+  display: flex;
+  height: auto;
+  justify-content: center;
+  width: 50%;
+}
+.productCardInCart .productFullDescription .productImage img {
+  border: solid 2px var(--colorOldRed);
+  height: auto;
+  width: 90%;
+}
+.productCardInCart .productFullDescription .productInfo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2px;
+  width: 45%;
+}
+.productCardInCart
+  .productFullDescription
+  .productInfo
+  .productDescriptionText {
+  align-items: center;
+  display: flex;
+  margin-bottom: 5px;
+  max-width: 200px;
+  overflow-wrap: break-word;
+  text-align: center;
+  width: 90%;
+}
+.productCardInCart .productFullDescription .productInfo .productValue {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  text-align: center;
+  width: 90%;
+}
+.productCardInCart .productButtons {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 480px) {
+  .productCardInCart {
+    min-height: 200px;
+    width: 300px;
+  }
+  .productCardInCart .productFullDescription {
+    flex-direction: column;
+  }
+  .productCardInCart .productFullDescription .productImage {
+    width: 100%;
+  }
+  .productCardInCart .productFullDescription .productInfo {
+    width: 100%;
+  }
+  .productCardInCart
+    .productFullDescription
+    .productInfo
+    .productDescriptionText {
+    width: 100%;
+  }
+}
+@media (min-width: 481px) and (max-width: 769px) {
+  .productCardInCart {
+    min-height: 250px;
+    width: 400px;
+  }
+  .productCardInCart .productFullDescription .productImage {
+    width: 60%;
+  }
+  .productCardInCart .productFullDescription .productInfo {
+    width: 40%;
+  }
+  .productCardInCart
+    .productFullDescription
+    .productInfo
+    .productDescriptionText {
+    min-width: 90%;
+  }
+}
+@media (min-width: 770px) and (max-width: 993px) {
+  .productCardInCart {
+    min-height: 300px;
+    width: 400px;
+  }
+  .productCardInCart .productFullDescription .productImage {
+    width: 55%;
+  }
+  .productCardInCart .productFullDescription .productInfo {
+    width: 45%;
+  }
+  .productCardInCart
+    .productFullDescription
+    .productInfo
+    .productDescriptionText {
+    min-width: 93%;
+  }
+}
+@media (min-width: 993px) {
+  .productCardInCart {
+    min-height: 300px;
+    width: 450px;
+  }
+  .productCardInCart .productFullDescription .productImage {
+    width: 50%;
+  }
+  .productCardInCart .productFullDescription .productInfo {
+    width: 50%;
+  }
+  .productCardInCart
+    .productFullDescription
+    .productInfo
+    .productDescriptionText {
+    min-width: 95%;
+  }
+}
