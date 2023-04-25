@@ -12,15 +12,20 @@ a,button{
 }
 
 :root{
-  --colorButtonCarousel:#807a2a;
+  --colorButtonCarousel:#e9da06;
   --colorDivInfo:#e1f1cd8c;
   --colorNavWhite:#f6f5f5;
-  --colorOldRed:#6e080e;
+  --colorOldRed:#ff0011;
   --colorOrange:#91491a;
   --colorRed:#b6a041;
   --colorTextBlack:#140000;
   --colorTextWhite:#feedee;
   --colorYellow:#eadac0;
+}
+
+.container{
+  margin-left: 55px;
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Open+Sans:wght@600&display=swap');

@@ -9,7 +9,6 @@
   padding: 15px;
   text-align: center;
   width: 100vw;
-  z-index: 2;
 }
 @media (max-width: 480px) {
   .unselectCategory {

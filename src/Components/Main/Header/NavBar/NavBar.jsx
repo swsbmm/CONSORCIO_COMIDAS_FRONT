@@ -11,19 +11,38 @@ export function NavBar() {
   
 
   return (
-    <ul className="NavBar">
-      <Link to="/restaurantes">RESTAURANTES</Link>
-      {/* <Link to="/domiciles">PRODUCTOS</Link> */}
-      <Link
-        to="/domiciles/shopping_card"
-        style={cart.length > 0 ? { backgroundColor: "red" } : null}
-      >
-        <img
-          src="https://drive.google.com/uc?export=download&id=12YfuFGlX0FAzlaPFK5FuGXzAsPd-5v_H"
-          alt="ICO"
-        />
-        <h2>({cart.length})</h2>
-      </Link>
-    </ul>
-  );
+    <nav className="main-menu">
+      <div className="scrollbar" id="style-1">
+        <ul>
+          
+          <li>
+            <Link to="/">
+              <i className="fa fa-home "></i>
+              <span className="nav-text">Home</span>
+            </Link>
+          </li>
+          
+          <li>
+            <Link to="/restaurantes">
+              <i className="fa fa-cutlery "></i>
+              <span className="nav-text">Restaurantes</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/domiciles">
+              <i className="fa fa-burger"></i>
+              <span className="nav-text">Productos</span>
+            </Link>
+          </li>
+
+          <li>
+            <Link to="/domiciles/shopping_card" style={cart.length > 0 ? { backgroundColor: "red" } : null} > 
+              <i className="fa fa-shopping-cart"></i>
+              <span className="nav-text">({cart.length})</span>
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    );
 }
