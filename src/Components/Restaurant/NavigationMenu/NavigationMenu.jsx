@@ -7,6 +7,7 @@ export function NavegationMenu(){
     return(
         <div>
             <ul className="NavBarMenu">
+                
                 <Link to={`/domiciles`}>Maria Jose Parrilla</Link>
                 <Link to={`/domiciles`}>KFC</Link>
                 <Link to={`/domiciles`}>Burger King</Link>

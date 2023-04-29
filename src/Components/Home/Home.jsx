@@ -19,15 +19,15 @@ export function Home() {
 
   return (
     <div className="containerHome">
-{/*       <section className="carouselImageHome">
-        <div className="imageHome">
+      <section className="carouselImageHome">
+        {/* <div className="imageHome">
           
           <img id="carouselImage" src={carouselImage[image].url} alt="imagen" />
     
-        </div>
-      </section> */}
+        </div> */}
+      </section>
       <section className="socialHome">
-{/*         <div className="logoHome">
+        {/* <div className="logoHome">
           <img
             src="https://drive.google.com/uc?export=download&id=1qynz1kaVgJnrVVASKH2eKCslhoTuSBK_"
             alt="logo"
@@ -47,7 +47,7 @@ export function Home() {
           </p>
         </div>
       </section>
-{/*       <section className="contactHome">
+      {/* <section className="contactHome">
         <div className="contactLocation">
           <h2>Visitanos</h2>
           <h3>En la Carrera 19D # 61A - 38 Sur, San Francisco - La Acacia</h3>
