@@ -6,7 +6,7 @@ import Cards from "../Cards/Cards";
 
 export function Restaurants() {
   return (
-    <div className=" d-flex justufy-content-center">
+    <div className="containerRestaurantes">
       <Outlet />
       <Cards />
     </div>

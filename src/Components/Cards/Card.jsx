@@ -1,15 +1,16 @@
 import React from 'react'
 
-import imagen from '../../Assets/img/icon.png'
-
-function Card() {
+function Card({title, imageSource, descripcion, }) {
+    
     return (
-        <div className='card'>
-            <img src={imagen} alt="" />
+        <div className='card text-center'>
+            <img src={imageSource} alt="" />
             <div className='card-body'>
-                <h4 className='card-title'>Card Text</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur harum suscipit nisi ex praesentium laborum temporibus, inventore aperiam ipsam, enim aspernatur voluptates rem minus vel impedit eveniet quam velit alias.</p>
-                <button type="button" class="btn btn-info">Info</button>
+                <h4 className='card-title'>{title}</h4>
+                <p>{descripcion}</p>
+                <a href="#!" className='btn btn-outline-info'>
+                    Ir al restaurante
+                </a>
             </div>
         </div>
     )

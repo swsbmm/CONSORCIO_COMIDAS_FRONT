@@ -1,3 +1,9 @@
+.containerRestaurantes{
+  /* background: #00bbbb; */
+  height: 100vh;
+  margin: 1%;
+
+}
 .containerDomiciles {
   align-items: center;
   background: linear-gradient(var(--colorOrange) 20%, var(--colorYellow) 80%);
