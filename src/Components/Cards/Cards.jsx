@@ -1,47 +1,52 @@
 import React from 'react'
 import Card from './Card'
-import imagen from '../../Assets/img/icon.png'
+import imagen1 from '../../Assets/img/Maria_Jose_Parrilla.png'
+import imagen2 from '../../Assets/img/descarga.jpeg'
+import imagen3 from '../../Assets/img/Burger_King.jpeg'
+import imagen4 from '../../Assets/img/Jenos_Pizza.png'
+import imagen5 from '../../Assets/img/El_corral.png'
+import imagen6 from '../../Assets/img/Dominos_Pizza.jpeg'
 
 const cards = [
   {
     id: 1,
     nom_rest: 'Maria Jose Parrilla',
-    img: imagen,
+    img: imagen1,
     desc: '',
     url: ''
   },
   {
     id: 2,
     nom_rest: 'KFC',
-    img: imagen,
+    img: imagen2,
     desc: '',
     url: ''
   },
   {
     id: 3,
     nom_rest: 'Burger King',
-    img: imagen,
+    img: imagen3,
     desc: '',
     url: ''
   },
   {
     id: 4,
     nom_rest: "Jeno's Pizza",
-    img: imagen,
+    img: imagen4,
     desc: '',
     url: ''
   },
   {
     id: 5,
     nom_rest: 'El corral',
-    img: imagen,
+    img: imagen5,
     desc: '',
     url: ''
   },
   {
     id: 6,
     nom_rest: 'Dominos Pizza',
-    img: imagen,
+    img: imagen6,
     desc: '',
     url: ''
   }
