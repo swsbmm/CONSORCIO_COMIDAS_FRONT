@@ -7,12 +7,12 @@ import imagen4 from '../../Assets/img/Jenos_Pizza.png'
 import imagen5 from '../../Assets/img/El_corral.png'
 import imagen6 from '../../Assets/img/Dominos_Pizza.jpeg'
 
-const cards = [
+const resturantes = [
   {
     id: 1,
     nom_rest: 'Maria Jose Parrilla',
     img: imagen1,
-    desc: '',
+    desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ducimus pariatur voluptate quaerat, repellendus natus quibusdam veritatis tempora ipsa odio distinctio. Architecto nihil ducimus a aut laboriosam vitae perspiciatis totam!',
     url: ''
   },
   {
@@ -55,11 +55,11 @@ const cards = [
 function Cards() {
   return (
     <div className="container d-flex justify-content-center aling-items-center h-100">
-      <div class="row">
+      <div className="row">
         {
-          cards.map(card => (
-            <div className="col-md-4" key={card.id}>
-              <Card title={card.nom_rest} imageSource={card.img} descripcion={card.url}/>
+          resturantes.map(resturante => (
+            <div className="col-md-4" key={resturante.id}>
+              <Card title={resturante.nom_rest} imageSource={resturante.img} descripcion={resturante.desc}/>
             </div>
           ))
         }

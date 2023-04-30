@@ -5,7 +5,7 @@ function Card({ title, imageSource, descripcion, }) {
 
     return (
         <div className='card text-center'>
-            <div className='Logo d-flex justify-content-center aling-items-center'>
+            <div className='Logo'>
                 <img src={imageSource} alt="" />
             </div>
 
