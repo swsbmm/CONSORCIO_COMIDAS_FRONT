@@ -14,14 +14,13 @@ export function CategoryPizza(props) {
         <img src={json.url} alt={"imagen de " + json.name} />
         <h2>{json.name}</h2>
       </div>
-      <div className="selectCategory">
+      <div className="subSelectCategory">
         <h2>PIZZAS</h2>
       </div>
       <Pizza key="001"/>
-      <div className="selectCategory">
+      <div className="subSelectCategory">
         <h2>Variedades y Sabores</h2>
       </div>
-      <Link to="/domiciles" key="002">Regresar al Menú</Link>
      <div className="productsList">
         {json.products.map((product) => {
           return product.id < 1000 ? (
@@ -35,7 +34,7 @@ export function CategoryPizza(props) {
         })}
       </div>
       
-      <div className="selectCategory">
+      <div className="subSelectCategory">
         <h2>Lasañas y Panzerotiis</h2>
       </div>
       <div className="productsList">

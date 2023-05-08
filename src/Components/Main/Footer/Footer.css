@@ -1,13 +1,14 @@
 footer {
   align-items: center;
-  background-color: var(--colorOldRed);
-  color: var(--colorTextWhite);
+  background-color: red;
+  color: white;
   display: flex;
   height: auto;
   justify-content: center;
-  padding: 2vh;
+  padding: 20px;
   text-align: center;
-  width: 100vw;
+  width: 90%;
+  margin: 10px auto;
 }
 footer h3 {
   margin: 1vh;

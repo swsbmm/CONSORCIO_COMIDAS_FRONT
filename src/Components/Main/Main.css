@@ -1,7 +1,7 @@
 #buttonToCart {
   align-items: center;
-  background-color: var(--colorOldRed);
-  color: var(--colorNavWhite);
+  background-color: red;
+  color: white;
   display: flex;
   justify-items: center;
   margin-left: 90vw;

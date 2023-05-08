@@ -1,17 +1,13 @@
 section.categorySection {
   align-items: center;
-/*   background: linear-gradient(var(--colorYellow) 10%, var(--colorOrange) 90%); */
-  background-color: #72502f;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 75px;
-  margin-bottom: 5vh;
-  width: 100vw;
+  width: 100%;
 }
 section.categorySection a {
-  background-color: var(--colorRed);
-  color: var(--colorNavWhite);
+  background-color: red;
+  color: white;
   display: flex;
   margin-top: 2vh;
   text-decoration: none;
@@ -22,8 +18,8 @@ section.categorySection a:hover {
 }
 section.categorySection .selectCategory {
   align-items: center;
-  background-color: var(--colorRed);
-  border: solid 5px var(--colorOldRed);
+  background-color: red;
+  border: solid 5px red;
   color: var(--colorNavWhite);
   display: flex;
   height: auto;
@@ -48,7 +44,7 @@ section.categorySection .productsList {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 5vh;
+  margin: 10px auto;
   width: 90%;
 }
 section.categorySection .productsList .pizzaCard:last-child {
@@ -73,6 +69,18 @@ section.categorySection
   margin-top: 15px;
   width: 100%;
 }
+.subSelectCategory{
+  width: 80%;
+  border-bottom: none;
+}
+
+.subSelectCategory h2{
+  background-color: orange;
+  margin: 10px auto;
+  width: 100%;
+  padding: 10px;
+}
+
 @media (max-width: 480px) {
   pizzaCard:last-child section.categorySection a {
     font-size: 0.9rem;
@@ -107,5 +115,9 @@ section.categorySection
   }
   section.categorySection .productsList  .pizzaFullDescription .pizzaInfo h4 {
     font-size: 0.9rem;
+  }
+  section.categorySection .productsList {
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
 }

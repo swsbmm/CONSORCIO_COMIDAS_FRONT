@@ -1,9 +1,9 @@
 .pizzasSizes {
   align-items: center;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
   justify-content: space-around;
-  width: 80vw;
+  width: 100%;
 }
 .pizzasSizes .pizzaSize {
   align-items: center;
@@ -65,8 +65,7 @@
     padding: 10px;
   }
   .pizzasSizes .pizzaSize .xl {
-    height: 120px;
-    width: 120px;
+    
   }
   .pizzasSizes .pizzaSize .small {
     height: 96px;

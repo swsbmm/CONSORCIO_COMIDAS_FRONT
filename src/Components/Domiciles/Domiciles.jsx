@@ -26,12 +26,6 @@ export function Domiciles() {
       </div>
       <Outlet />
       <section className="domicilesMenu">
-{/*         <div className="logoDomiciles">
-          <img
-            src="https://drive.google.com/uc?export=download&id=1qynz1kaVgJnrVVASKH2eKCslhoTuSBK_"
-            alt="logo"
-          />
-        </div> */}
         <div className="navDomiciles">
           <NavegationMenu />
         </div>
