@@ -1,17 +1,21 @@
 
 
 body, *{
+  font-family: 'Titillium Web', cursive;
   margin: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   padding: 0;
-  font-family: "Open Sans", arial;
+}
+
+a,button{
+  font-family: 'Titillium Web';
 }
 
 :root{
   --colorButtonCarousel:#e9da06;
   --colorDivInfo:#e1f1cd8c;
   --colorNavWhite:#f6f5f5;
-  --colorOldRed:#ff0011;
+  --colorOldRed:#00bbbb;
   --colorOrange:#91491a;
   --colorRed:#b6a041;
   --colorTextBlack:#140000;

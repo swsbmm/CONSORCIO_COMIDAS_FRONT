@@ -15,6 +15,8 @@ import { ShoppingCart } from "./Components/ShoppingCart/ShoppingCart";
 import { Categories } from "./Components/Data/Categories";
 import ScrollToTop from "./Components/Redux/ScrollToTop";
 
+import 'bootstrap/dist/css/bootstrap.min.css' 
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
