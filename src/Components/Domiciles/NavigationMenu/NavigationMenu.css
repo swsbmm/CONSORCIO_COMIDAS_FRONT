@@ -1,6 +1,7 @@
 .NavBarMenu{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .nvMenu h1{
@@ -19,4 +20,22 @@
     text-align: center;
     color: red;
     text-decoration: none;
+}
+
+.Tarjetas-Productos{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 100%;
+}
+
+.subTitulo{
+    font-size: 24px;
+    width: 100%;
+}
+ul{
+    width: 100%;
+}
+
+.Tarjeta{
+    margin: 10px;
 }

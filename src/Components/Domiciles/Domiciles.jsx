@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useParams } from "react-router-dom";
 import "./Domiciles.css";
 import { NavegationMenu } from "./NavigationMenu/NavigationMenu";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-export function Domiciles() {
+export function Domiciles(id) {
+
+  // let {id} = useParams();
   
   const notifications = () =>{
     toast.success("Bienvenido a productos de Maria Jose Parrilla");
@@ -20,16 +22,12 @@ export function Domiciles() {
   
   
   return (
-    <div className="containerDomiciles">
-      <div>
-        <ToastContainer />
-      </div>
-      <Outlet />
+    
       <section className="domicilesMenu">
         <div className="navDomiciles">
-          <NavegationMenu />
+          <NavegationMenu id={id} />
         </div>
       </section>
-    </div>
+    
   );
 }

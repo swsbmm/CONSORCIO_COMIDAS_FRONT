@@ -1,18 +1,24 @@
 import React from "react";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import './NavigationMenu.css'
+import Producto from "./producto";
 
-export function NavegationMenu(){
+export function NavegationMenu(id) {
 
-    return(
+
+    return (
         <div>
-            <ul className="NavBarMenu">
-                <Link to={`./pizzas`}>PIZZAS, LASAÑAS y PANZEROTII</Link>
-                <Link to={`./hotdogs`}>PERROS CALIENTES</Link>
-                <Link to={`./burgers`}>HAMBURGUESAS</Link>
-                <Link to={`./salchipapas`}>SALCHIPAPAS</Link>
-                <Link to={`./patacones&others`}>PATACONES Y OTROS</Link>
-                <Link to={`./drinks&others`}>BEBIDAS Y ADICIONALES</Link>
+            <ul >
+            <div className="subTitulo">Entradas</div>
+            <Producto tipo={'Entrada'} id={id}/>
+            <div className="subTitulo">Platos Fuertes</div>
+            <Producto tipo={'Plato Fuerte'} id={id}/>
+            <div className="subTitulo">Postres</div>
+            <Producto tipo={'Postres'} id={id}/>
+            <div className="subTitulo">Bebidas</div>
+            <Producto tipo={'Bebidas'} id={id}/>
+            <div className="subTitulo">Acompañamientos</div>
+            <Producto tipo={'Acompañamientos'} id={id}/>
             </ul>
         </div>
     );

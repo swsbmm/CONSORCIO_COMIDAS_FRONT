@@ -26,9 +26,8 @@ ReactDOM.render(
         <Route path="/" element={<Main />}>
           <Route path="/" element={<Home />} />
           <Route path="/restaurantes" element={<Restaurants />} />
-          <Route path="/domiciles" element={<Domiciles />}>
-            <Route path="/domiciles" element={<Unselect />} />
-          </Route>
+          <Route path="/domiciles/:id" element={<Unselect />} />
+          
 
           <Route
               path="/domiciles/pizzas"

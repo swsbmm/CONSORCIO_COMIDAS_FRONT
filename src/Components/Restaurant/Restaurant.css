@@ -15,10 +15,8 @@
   width: 100vw;
 }
 .domicilesMenu {
-  /* display: flex; */
-  justify-content: space-around;
   text-align: center;
-  width: 90vw;
+  width: 100%;
 }
 .domicilesMenu .logoDomiciles {
   align-items: center;
@@ -36,8 +34,8 @@
 }
 .domicilesMenu .navDomiciles {
   align-items: center;
-  /* display: flex; */
   justify-content: center;
+  width: 100%;
 }
 @media (max-width: 480px) {
   .domicilesMenu .navDomiciles {
@@ -65,7 +63,7 @@
 }
 @media (min-width: 994px) {
   .domicilesMenu .navDomiciles {
-    width: 45vw;
+    width: 100%;
   }
   .domicilesMenu .logoDomiciles {
     width: 20vw;
