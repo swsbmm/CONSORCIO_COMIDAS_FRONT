@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import './NavigationMenu.css'
+import { ButtonCard } from "../ProductCategories/Defoult/ButtonsCard/ButtonCard";
 
 const entradas = [
     {
@@ -27,6 +28,8 @@ const entradas = [
 
 const Producto = (tipo, id) => {
 
+    const amount = 0;
+
 
     // let [productos, setProductos] = useState([]);
 
@@ -47,28 +50,32 @@ const Producto = (tipo, id) => {
 
     return (
         <>
-        <div className="Tarjetas-Productos">
-            {
-                entradas.map(entrada => (
-                    <div className="Tarjeta">
-                    <Card style={{ width: '100%' }}>
-                        <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                            </Card.Text>
-                        </Card.Body>
-                        <Card.Body>
-                            <Card.Link href="#">Card Link</Card.Link>
-                            <Card.Link href="#">Another Link</Card.Link>
-                        </Card.Body>
-                    </Card>
-                    </div>
-                ))
-            }
-        </div>
+            <div className="Tarjetas-Productos">
+                {
+                    entradas.map(entrada => (
+                        <div className="Tarjeta">
+                            <Card style={{ width: '100%' }}>
+                                <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+                                <Card.Body>
+                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Text>
+                                        Some quick example text to build on the card title and make up the
+                                        bulk of the card's content.
+                                    </Card.Text>
+                                </Card.Body>
+                                <Card.Body>
+                                    <div className="productButtons">
+                                        <ButtonCard
+                                            key={"buttonProduct" + id}
+                                            amount={amount}
+                                            id={id} />
+                                    </div>
+                                </Card.Body>
+                            </Card>
+                        </div>
+                    ))
+                }
+            </div>
         </>
     )
 }
