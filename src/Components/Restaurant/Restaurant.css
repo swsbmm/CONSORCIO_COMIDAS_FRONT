@@ -1,6 +1,8 @@
+.restaurante{
+  padding: 10px;
+}
 .containerRestaurantes{
   /* background: #00bbbb; */
-  height: 100vh;
   margin: 1%;
 
 }

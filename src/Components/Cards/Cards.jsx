@@ -13,44 +13,43 @@ const resturantes = [
   {
     id: 1,
     nom_rest: 'Maria Jose Parrilla',
-    img: imagen1,
-    desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ducimus pariatur voluptate quaerat, repellendus natus quibusdam veritatis tempora ipsa odio distinctio. Architecto nihil ducimus a aut laboriosam vitae perspiciatis totam!',
-    url: ''
+    imgUrl: imagen1,
+    desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ducimus pariatur voluptate quaerat, repellendus natus quibusdam veritatis tempora ipsa odio distinctio. Architecto nihil ducimus a aut laboriosam vitae perspiciatis totam!' 
   },
   {
     id: 2,
     nom_rest: 'KFC',
-    img: imagen2,
-    desc: '',
-    url: ''
+    imgUrl: imagen2,
+    desc: ''
+
   },
   {
     id: 3,
     nom_rest: 'Burger King',
-    img: imagen3,
-    desc: '',
-    url: ''
+    imgUrl: imagen3,
+    desc: ''
+
   },
   {
     id: 4,
     nom_rest: "Jeno's Pizza",
-    img: imagen4,
-    desc: '',
-    url: ''
+    imgUrl: imagen4,
+    desc: ''
+
   },
   {
     id: 5,
     nom_rest: 'El corral',
-    img: imagen5,
-    desc: '',
-    url: ''
+    imgUrl: imagen5,
+    desc: ''
+
   },
   {
     id: 6,
     nom_rest: 'Dominos Pizza',
-    img: imagen6,
-    desc: '',
-    url: ''
+    imgUrl: imagen6,
+    desc: ''
+
   }
 ]
 
@@ -79,8 +78,8 @@ function Cards() {
       <div className="row">
         {
           resturantes.map(resturante => (
-            <div className="col-md-4" key={resturante.id}>
-              <Card id={resturante.id} title={resturante.nom_rest} imageSource={resturante.img} descripcion={resturante.desc}/>
+            <div className="restaurante col-md-4" key={resturante.id}>
+              <Card id={resturante.id} title={resturante.nom_rest} imageSource={resturante.imgUrl} descripcion={resturante.desc}/>
             </div>
           ))
         }

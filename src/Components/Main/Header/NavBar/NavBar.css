@@ -106,7 +106,7 @@ nav.main-menu.expanded {
 .main-menu {
   z-index: 999;
   background: #F7F7F7;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   height: 100%;

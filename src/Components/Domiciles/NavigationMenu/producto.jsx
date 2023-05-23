@@ -6,6 +6,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import './NavigationMenu.css'
 import { ButtonCard } from "../ProductCategories/Defoult/ButtonsCard/ButtonCard";
 
+
 const entradas = [
     {
         id: 1,
@@ -27,7 +28,6 @@ const entradas = [
 ]
 
 const Producto = (tipo, id) => {
-
     const amount = 0;
 
 
