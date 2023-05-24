@@ -21,11 +21,11 @@ const Producto = ({ tipo, id }) => {
 
     useEffect(() => {
         reqApi();
-    }, [id]);
+    }, []);
 
     useEffect(() => {
         filtarProductos();
-    }, [tipo]);
+    }, [productos]);
 
     function filtarProductos(){
         const t = productos.filter((producto)=> producto.tipo===tipo)
@@ -36,7 +36,7 @@ const Producto = ({ tipo, id }) => {
         <>
             <div className="Tarjetas-Productos">
                 {categoria.map((catego)=>
-                <div className="Tarjeta">
+                <div className="Tarjeta" key={catego.id}>
                     <Card style={{ width: '100%' }}>
                         <Card.Img variant="top" src={catego.url} />
                         <Card.Body>
