@@ -29,7 +29,7 @@ function Cards() {
         {
           restaurantes.map(resturante => (
             <div className="col-md-4" key={resturante.id}>
-              <Card id={resturante.id} title={resturante.nombre} imageSource={resturante.url} descripcion={resturante.descripcion} />
+              <Card id={resturante.id} title={resturante.nom_rest} imageSource={resturante.img} descripcion={resturante.desc}/>
             </div>
           ))
         }

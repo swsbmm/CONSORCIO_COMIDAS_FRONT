@@ -29,7 +29,7 @@ export function NavBar() {
             </Link>
           </li>
           <li>
-            <Link to="/domiciles">
+            <Link to="/Producto">
               <i className="fa fa-burger"></i>
               <span className="nav-text">Productos</span>
             </Link>
