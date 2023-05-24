@@ -3,22 +3,22 @@ import { Link } from "react-router-dom";
 import './NavigationMenu.css'
 import Producto from "./producto";
 
-export function NavegationMenu(id) {
+export function NavegationMenu({id}) {
 
 
     return (
         <div>
             <ul >
             <div className="subTitulo">Entradas</div>
-            <Producto tipo={'Entrada'} id={id}/>
+            <Producto tipo={'entrada'} id={id}/>
             <div className="subTitulo">Platos Fuertes</div>
-            <Producto tipo={'Plato Fuerte'} id={id}/>
+            <Producto tipo={'plato fuerte'} id={id}/>
             <div className="subTitulo">Postres</div>
-            <Producto tipo={'Postres'} id={id}/>
+            <Producto tipo={'postre'} id={id}/>
             <div className="subTitulo">Bebidas</div>
-            <Producto tipo={'Bebidas'} id={id}/>
+            <Producto tipo={'postre'} id={id}/>
             <div className="subTitulo">Acompañamientos</div>
-            <Producto tipo={'Acompañamientos'} id={id}/>
+            <Producto tipo={'acompañamiento'} id={id}/>
             </ul>
         </div>
     );

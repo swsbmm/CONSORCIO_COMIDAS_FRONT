@@ -6,75 +6,56 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import './NavigationMenu.css'
 import { ButtonCard } from "../ProductCategories/Defoult/ButtonsCard/ButtonCard";
 
-const entradas = [
-    {
-        id: 1,
-        nombre: 'empanadas'
-    },
-    {
-        id: 2,
-        nombre: 'ensalada'
-    },
-    {
-        id: 3,
-        nombre: 'sopa'
-    },
-    {
-        id: 4,
-        nombre: 'pan'
-    }
-
-]
-
-const Producto = (tipo, id) => {
+const Producto = ({ tipo, id }) => {
 
     const amount = 0;
 
+    let [productos, setProductos] = useState([]);
+    let [categoria, setCategoria] = useState([]);
 
-    // let [productos, setProductos] = useState([]);
+    const reqApi = async () => {
+        const api = await fetch(`https://api.heflox.com/products/${id}`);
+        const rest = await api.json();
+        setProductos(rest);
+    };
 
-    // async function fetchProductos() {
-    //     axios
-    //         .get(`http://localhost:5000/verProductos/${id}/${tipo}`)
-    //         .then((response) => {
-    //             setProductos(response.data);
-    //         })
-    //         .catch((error) => {
-    //             console.log(error);
-    //         })
-    // }
+    useEffect(() => {
+        reqApi();
+    }, [id]);
 
-    // useEffect(() => {
-    //     fetchProductos();
-    // }, []);
+    useEffect(() => {
+        filtarProductos();
+    }, [tipo]);
+
+    function filtarProductos(){
+        const t = productos.filter((producto)=> producto.tipo===tipo)
+        setCategoria(t)
+    }
 
     return (
         <>
             <div className="Tarjetas-Productos">
-                {
-                    entradas.map(entrada => (
-                        <div className="Tarjeta">
-                            <Card style={{ width: '100%' }}>
-                                <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
-                                <Card.Body>
-                                    <Card.Title>Card Title</Card.Title>
-                                    <Card.Text>
-                                        Some quick example text to build on the card title and make up the
-                                        bulk of the card's content.
-                                    </Card.Text>
-                                </Card.Body>
-                                <Card.Body>
-                                    <div className="productButtons">
-                                        <ButtonCard
-                                            key={"buttonProduct" + id}
-                                            amount={amount}
-                                            id={id} />
-                                    </div>
-                                </Card.Body>
-                            </Card>
-                        </div>
-                    ))
-                }
+                {categoria.map((catego)=>
+                <div className="Tarjeta">
+                    <Card style={{ width: '100%' }}>
+                        <Card.Img variant="top" src={catego.url} />
+                        <Card.Body>
+                            <Card.Title>{catego.nombre}</Card.Title>
+                            <Card.Text>
+                                {catego.descripcion}
+                            </Card.Text>
+                        </Card.Body>
+                        <Card.Body>
+                            <div className="productButtons">
+                                <ButtonCard
+                                    key={"buttonProduct" + id}
+                                    amount={amount}
+                                    id={id} />
+                            </div>
+                        </Card.Body>
+                    </Card>
+                </div>
+                )}
             </div>
         </>
     )
