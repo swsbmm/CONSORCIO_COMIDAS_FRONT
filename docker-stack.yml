@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  consorcio:
+    image: consorcio_front
+    networks:
+      - reverse_proxy
+    deploy:
+      replicas: 1
+      labels:
+        - "traefik.enable=true"
+        - "traefik.docker.network=reverse_proxy"
+        - "traefik.http.routers.consorcio_front.entrypoints=websecure"
+        - "traefik.http.routers.consorcio_front.rule=Host(`consorcio.heflox.com`)"
+        - "traefik.http.routers.consorcio_front.service=consorcio_front"
+        - "traefik.http.services.consorcio_front.loadbalancer.server.port=80"
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+      placement:
+        constraints: [node.hostname == my-server]
+networks:
+  reverse_proxy:
+    external: true
