@@ -51,4 +51,4 @@ export const Productos = JSON.parse(`{
 				"Small":32000
 			}}
 	]
-}`)
+}`);

@@ -1,10 +1,9 @@
-.Logo{
-    border-radius: 50%;
-  }
+.Logo {
+  border-radius: 50%;
+}
 
-  img{
-    object-fit: cover;
-    width:100px;
-    height:100px;
-  }
-
+img {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+}

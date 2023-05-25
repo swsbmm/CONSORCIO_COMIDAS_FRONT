@@ -13,9 +13,13 @@ export function Home() {
     }
   };
 
-  const timer = () => { setTimeout(onRight, 5000)};
+  const timer = () => {
+    setTimeout(onRight, 5000);
+  };
 
-  useEffect(()=>{timer()})
+  useEffect(() => {
+    timer();
+  });
 
   return (
     <div className="containerHome">
@@ -43,7 +47,8 @@ export function Home() {
             experiencia gastronómica de primera, ya sea en nuestras
             instalaciones o enviándote a tu hogar los productos que prefieras,
             hecha les un vistazo en nuestra sección Domicilios y si te antojaste
-            de algo no dudes en agregarlo al Carrito de compras para gestionar tu Pedido.
+            de algo no dudes en agregarlo al Carrito de compras para gestionar
+            tu Pedido.
           </p>
         </div>
       </section>

@@ -13,10 +13,10 @@ export function ButtonCardCart(props) {
       </div>
       <h2>
         SubTotal ={" "}
-        {(value*quantity).toLocaleString("es-CO", {
-            style: "currency",
-            currency: "COP",
-          })}
+        {(value * quantity).toLocaleString("es-CO", {
+          style: "currency",
+          currency: "COP",
+        })}
       </h2>
     </div>
   );

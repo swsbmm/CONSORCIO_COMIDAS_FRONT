@@ -31,11 +31,10 @@ export function ShoppingCart() {
       "Cantidad:%20" +
       item.quantity +
       "%20Subtotal:%20" +
-      (item.quantity *
-        item.value).toLocaleString("es-CO", {
-          style: "currency",
-          currency: "COP",
-        }) +
+      (item.quantity * item.value).toLocaleString("es-CO", {
+        style: "currency",
+        currency: "COP",
+      }) +
       "%20"
   );
   const apiMessage =
@@ -83,7 +82,6 @@ export function ShoppingCart() {
   };
   return (
     <div className="containerCart">
-      
       <div className="titleCart">
         <h2>Carrito de compras</h2>
         <h3>
@@ -137,7 +135,10 @@ export function ShoppingCart() {
       </div>
       <section className="formCart">
         <h2>DATOS DEL PEDIDO</h2>
-        <h5>El pedido será gestionado a través de la App de WhatsApp, por favor permita el direccionamiento una vez finalice su pedido</h5>
+        <h5>
+          El pedido será gestionado a través de la App de WhatsApp, por favor
+          permita el direccionamiento una vez finalice su pedido
+        </h5>
         <form>
           <input
             type="text"
@@ -183,7 +184,10 @@ export function ShoppingCart() {
             }
           >
             <h3>Enviar a WhatsApp</h3>
-            <img src="https://drive.google.com/uc?export=download&id=17J9ZT5AS9KkfI3cvq34vOyRNhxdATPVg" alt="" />
+            <img
+              src="https://drive.google.com/uc?export=download&id=17J9ZT5AS9KkfI3cvq34vOyRNhxdATPVg"
+              alt=""
+            />
           </button>
         </form>
       </section>

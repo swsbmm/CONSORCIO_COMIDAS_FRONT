@@ -17,11 +17,11 @@ export function CategoryPizza(props) {
       <div className="subSelectCategory">
         <h2>PIZZAS</h2>
       </div>
-      <Pizza key="001"/>
+      <Pizza key="001" />
       <div className="subSelectCategory">
         <h2>Variedades y Sabores</h2>
       </div>
-     <div className="productsList">
+      <div className="productsList">
         {json.products.map((product) => {
           return product.id < 1000 ? (
             <PizzaCard
@@ -33,23 +33,25 @@ export function CategoryPizza(props) {
           ) : null;
         })}
       </div>
-      
+
       <div className="subSelectCategory">
         <h2>Lasañas y Panzerotiis</h2>
       </div>
       <div className="productsList">
         {json.products.map((product) => {
           return product.id < 1000 ? null : (
-              <ProductCard
-                key={product.id}
-                id={product.id}
-                data={product}
-                amount={0}
-              />
+            <ProductCard
+              key={product.id}
+              id={product.id}
+              data={product}
+              amount={0}
+            />
           );
         })}
       </div>
-      <Link to="/domiciles" key="003">Regresar al Menú</Link>
+      <Link to="/domiciles" key="003">
+        Regresar al Menú
+      </Link>
     </section>
   );
 }

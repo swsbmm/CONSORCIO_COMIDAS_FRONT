@@ -18,4 +18,4 @@ export const Salchipapas = JSON.parse(`{
          	"url":"https://drive.google.com/uc?export=download&id=1iYwrGxSKaekoGtYihEcYKRgzkjtRZAQi",
          	"description":"Chorizo + Queso + 2 Huevos de Codorniz + Papa a la Francesa",
          	"value":8000}]
-}`)
+}`);

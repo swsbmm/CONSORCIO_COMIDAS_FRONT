@@ -1,17 +1,17 @@
-.containerHome{
-    color: black;
-    width: 80%;
-    margin: auto auto;
-    height: 80vh;
+.containerHome {
+  color: black;
+  width: 80%;
+  margin: auto auto;
+  height: 80vh;
 }
 
-h2{
-    display: flex;
-    justify-content: center;
-    margin: 40px auto;
-    border-bottom: 2px solid red;
+h2 {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+  border-bottom: 2px solid red;
 }
 
-p{
-    text-align: justify;
+p {
+  text-align: justify;
 }

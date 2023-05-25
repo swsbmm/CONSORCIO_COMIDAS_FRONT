@@ -45,22 +45,22 @@ export function PizzaCard(props) {
           <div className="pizzaValue">
             <h3>
               {size === "XL"
-                ?value.XL.toLocaleString("es-CO", {
+                ? value.XL.toLocaleString("es-CO", {
                     style: "currency",
                     currency: "COP",
                   })
                 : size === "Small"
-                ?value.Small.toLocaleString("es-CO", {
+                ? value.Small.toLocaleString("es-CO", {
                     style: "currency",
                     currency: "COP",
                   })
                 : size === "MS"
-                ?value.MS.toLocaleString("es-CO", {
+                ? value.MS.toLocaleString("es-CO", {
                     style: "currency",
                     currency: "COP",
                   })
                 : size === "individual"
-                ?value.individual.toLocaleString("es-CO", {
+                ? value.individual.toLocaleString("es-CO", {
                     style: "currency",
                     currency: "COP",
                   })

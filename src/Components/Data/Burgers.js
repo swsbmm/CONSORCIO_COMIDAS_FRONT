@@ -28,4 +28,4 @@ export const Burgers = JSON.parse(`{
          	"url":"https://drive.google.com/uc?export=download&id=18SznUNWJCiR59e-W2fETv6Wb_8B0BHF9",
          	"description":"Pan Fino + Carne Artesanal + Maiz Tierno + Papitas Chips + Huevo de Gallina Frito + Cebolla + Tomate + Salsas + Chorizo + Queso + Tocineta + Francesa",
          	"value":14500}]
-}`)
+}`);

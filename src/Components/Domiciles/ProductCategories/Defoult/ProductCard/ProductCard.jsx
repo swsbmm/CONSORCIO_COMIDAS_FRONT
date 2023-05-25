@@ -20,16 +20,15 @@ export function ProductCard(props) {
             <h4>...{description}...</h4>
           </div>
           <div className="productValue">
-            <h3>{value.toLocaleString("es-CO", {
-              style: "currency",
-              currency: "COP"
-            })}</h3>
+            <h3>
+              {value.toLocaleString("es-CO", {
+                style: "currency",
+                currency: "COP",
+              })}
+            </h3>
           </div>
           <div className="productButtons">
-            <ButtonCard
-              key={"buttonProduct" + id}
-              amount={amount}
-              id={id} />
+            <ButtonCard key={"buttonProduct" + id} amount={amount} id={id} />
           </div>
         </div>
       </div>

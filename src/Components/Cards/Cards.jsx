@@ -1,9 +1,8 @@
-import React from 'react'
-import Card from './Card'
-import { useState, useEffect } from 'react'
+import React from "react";
+import Card from "./Card";
+import { useState, useEffect } from "react";
 
 function Cards() {
-
   let [restaurantes, setRestaurante] = useState([]);
 
   const reqApi = async () => {
@@ -20,16 +19,19 @@ function Cards() {
   return (
     <div className="container d-flex justify-content-center aling-items-center h-100">
       <div className="row">
-        {
-          restaurantes.map(resturante => (
-            <div className="col-md-4" key={resturante.id}>
-              <Card id={resturante.id} title={resturante.nombre} imageSource={resturante.url} descripcion={resturante.descripcion}/>
-            </div>
-          ))
-        }
+        {restaurantes.map((resturante) => (
+          <div className="col-md-4" key={resturante.id}>
+            <Card
+              id={resturante.id}
+              title={resturante.nombre}
+              imageSource={resturante.url}
+              descripcion={resturante.descripcion}
+            />
+          </div>
+        ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Cards
+export default Cards;

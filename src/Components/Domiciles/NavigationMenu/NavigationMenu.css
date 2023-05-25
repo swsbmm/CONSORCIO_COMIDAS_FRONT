@@ -1,41 +1,41 @@
-.NavBarMenu{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.NavBarMenu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-.nvMenu h1{
-    color: red;
-    text-align: center;
-    margin: 40px;
-    border-bottom: 2px solid red;
+.nvMenu h1 {
+  color: red;
+  text-align: center;
+  margin: 40px;
+  border-bottom: 2px solid red;
 }
 
-.NavBarMenu a{
-    margin: 10px auto;
-    padding: 10px;
-    border: 3px solid black;
-    border-radius: 5px;
-    width: 50%;
-    text-align: center;
-    color: red;
-    text-decoration: none;
+.NavBarMenu a {
+  margin: 10px auto;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 5px;
+  width: 50%;
+  text-align: center;
+  color: red;
+  text-decoration: none;
 }
 
-.Tarjetas-Productos{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    width: 100%;
+.Tarjetas-Productos {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  width: 100%;
 }
 
-.subTitulo{
-    font-size: 24px;
-    width: 100%;
+.subTitulo {
+  font-size: 24px;
+  width: 100%;
 }
-ul{
-    width: 100%;
+ul {
+  width: 100%;
 }
 
-.Tarjeta{
-    margin: 10px;
+.Tarjeta {
+  margin: 10px;
 }

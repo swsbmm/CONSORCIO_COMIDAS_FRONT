@@ -1,31 +1,30 @@
-
-
-body, *{
-  font-family: 'Titillium Web', cursive;
+body,
+* {
+  font-family: "Titillium Web", cursive;
   margin: 0;
   /* overflow-x: hidden; */
   padding: 0;
 }
 
-a,button{
-  font-family: 'Titillium Web';
+a,
+button {
+  font-family: "Titillium Web";
 }
 
-:root{
-  --colorButtonCarousel:#e9da06;
-  --colorDivInfo:#e1f1cd8c;
-  --colorNavWhite:#f6f5f5;
-  --colorOldRed:#00bbbb;
-  --colorOrange:#91491a;
-  --colorRed:#b6a041;
-  --colorTextBlack:#140000;
-  --colorTextWhite:#feedee;
-  --colorYellow:#eadac0;
+:root {
+  --colorButtonCarousel: #e9da06;
+  --colorDivInfo: #e1f1cd8c;
+  --colorNavWhite: #f6f5f5;
+  --colorOldRed: #00bbbb;
+  --colorOrange: #91491a;
+  --colorRed: #b6a041;
+  --colorTextBlack: #140000;
+  --colorTextWhite: #feedee;
+  --colorYellow: #eadac0;
 }
 
-.container{
+.container {
   margin-left: 55px;
-
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Open+Sans:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Open+Sans:wght@600&display=swap");

@@ -28,4 +28,4 @@ export const PataconesOthers = JSON.parse(`{
          	"url":"https://drive.google.com/uc?export=download&id=1gmG3jwnRy9hHeV_jxpiCTzTxjGLuW1TT",
          	"description":"Costillitas de Cerdo Fritas + Patacón + Lechuga + Cebolla + Tomate + Papa a la Francesa",
          	"value":16000}]
-}`)
+}`);

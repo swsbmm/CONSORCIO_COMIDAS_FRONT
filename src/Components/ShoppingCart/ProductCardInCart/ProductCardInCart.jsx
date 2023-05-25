@@ -3,7 +3,16 @@ import "./ProductCardInCart.css";
 import { ButtonCardCart } from "./ButtonsCardCart/ButtonCardCart";
 
 export function ProductCardInCart(props) {
-  const { value, data, quantity, id, addToCart, dellOneFromCart, dellAllFromCart, size } = props;
+  const {
+    value,
+    data,
+    quantity,
+    id,
+    addToCart,
+    dellOneFromCart,
+    dellAllFromCart,
+    size,
+  } = props;
   let { name, url, description } = data;
 
   const clearItem = () => dellAllFromCart(id, true);
@@ -18,7 +27,9 @@ export function ProductCardInCart(props) {
     <div className="productCardInCart">
       <div className="productName">
         <h3>{size ? name + " - " + size : name}</h3>
-        <button className="productClearProduct" onClick={alertClear}>X</button>
+        <button className="productClearProduct" onClick={alertClear}>
+          X
+        </button>
       </div>
       <div className="productFullDescription">
         <div className="productImage">
@@ -29,10 +40,12 @@ export function ProductCardInCart(props) {
             <h4>...{description}...</h4>
           </div>
           <div className="productValue">
-            <h3>{value.toLocaleString("es-CO", {
-              style: "currency",
-              currency: "COP"
-            })}</h3>
+            <h3>
+              {value.toLocaleString("es-CO", {
+                style: "currency",
+                currency: "COP",
+              })}
+            </h3>
           </div>
         </div>
       </div>
@@ -43,7 +56,8 @@ export function ProductCardInCart(props) {
           value={value}
           id={id}
           addToCart={addToCart}
-          dellOneFromCart={dellOneFromCart} />
+          dellOneFromCart={dellOneFromCart}
+        />
       </div>
     </div>
   );

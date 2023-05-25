@@ -33,4 +33,4 @@ export const Hotdogs = JSON.parse(`{
          "url":"https://drive.google.com/uc?export=download&id=13_vKEk5B3ouGQNqWqn8YLYkxgmnWLRcM",
          "description":"Chorizo + Arepa + Queso + Huevo de Codorniz",
          "value":6000}
-    ]}`)
+    ]}`);

@@ -131,4 +131,4 @@ export const Pizzas = JSON.parse(`{
          	"description":"Pidela a tu gusto, mixto o con algún ingrediente extra",
          	"value":15000}
 	]
-}`)
+}`);
