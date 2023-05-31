@@ -36,7 +36,7 @@ const Producto = ({ tipo, id }) => {
       <div className="Tarjetas-Productos">
         {categoria.map((categoria) => (
           <div className="Tarjeta" key={categoria.id}>
-            <Card style={{ width: "100%" }}>
+            <Card>
               <Card.Img variant="top" src={categoria.url} />
               <Card.Body>
                 <Card.Title>{categoria.nombre}</Card.Title>
@@ -48,6 +48,7 @@ const Producto = ({ tipo, id }) => {
                     key={`buttonProduct${categoria.id}`}
                     amount={amount}
                     id={categoria.id}
+                    name={categoria.nombre}
                   />
                 </div>
               </Card.Body>

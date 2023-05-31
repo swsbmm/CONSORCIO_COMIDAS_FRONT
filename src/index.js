@@ -14,6 +14,7 @@ import { CategoryPizza } from "./Components/Domiciles/ProductCategories/Defoult/
 import { ShoppingCart } from "./Components/ShoppingCart/ShoppingCart";
 import { Categories } from "./Components/Data/Categories";
 import ScrollToTop from "./Components/Redux/ScrollToTop";
+import { Footer } from "./Components/Main/Footer/Footer";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 

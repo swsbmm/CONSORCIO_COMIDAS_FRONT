@@ -6,7 +6,7 @@ import "./ButtonCard.css";
 export function ButtonCard(props) {
   const dispatch = useDispatch();
 
-  const { amount, id } = props;
+  const { amount, id, name } = props;
 
   const [quantity, setQuantity] = useState(amount);
 
@@ -22,9 +22,12 @@ export function ButtonCard(props) {
     );
   };
   const sendToCart = () => {
-    dispatch(addToCartFromMenu(id, quantity));
-    alertCart();
-    setQuantity(0);
+  // Obtén el valor existente del localStorage
+  const existingValue = localStorage.getItem('carro');
+  const existingObject = JSON.parse(existingValue);
+  existingObject[name] = quantity;
+  const updatedValue = JSON.stringify(existingObject);
+  localStorage.setItem('carro', updatedValue);
   };
 
   return (
@@ -38,7 +41,6 @@ export function ButtonCard(props) {
       </div>
       <button
         className="buttonAmountSend"
-        disabled={quantity === 0 ? true : false}
         onClick={sendToCart}
       >
         Añadir al Carrito

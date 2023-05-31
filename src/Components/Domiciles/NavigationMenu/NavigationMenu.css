@@ -4,6 +4,13 @@
   width: 100%;
 }
 
+.card-body{
+  color: gray;
+}
+
+.Tarjeta .card {
+  width: fit-content;
+}
 .nvMenu h1 {
   color: red;
   text-align: center;

@@ -25,6 +25,7 @@ button {
 
 .container {
   margin-left: 55px;
+  height: calc(100vh - 120px)
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Open+Sans:wght@600&display=swap");

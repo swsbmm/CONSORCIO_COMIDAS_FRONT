@@ -9,6 +9,24 @@
   margin-left: 20px;
   width: 90vw;
 }
+
+.sep_nav{
+  padding-left: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+}
+
+.tabla-shoping{
+  width: 80vw;
+}
+
+footer{
+  padding-left: 40px;
+}
+
 .containerCart .infoCart,
 .containerCart .titleCart {
   align-items: center;
