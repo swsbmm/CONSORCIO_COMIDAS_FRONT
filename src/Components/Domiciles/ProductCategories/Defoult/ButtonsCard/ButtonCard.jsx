@@ -22,12 +22,12 @@ export function ButtonCard(props) {
     );
   };
   const sendToCart = () => {
-  // Obtén el valor existente del localStorage
-  const existingValue = localStorage.getItem('carro');
-  const existingObject = JSON.parse(existingValue);
-  existingObject[name] = quantity;
-  const updatedValue = JSON.stringify(existingObject);
-  localStorage.setItem('carro', updatedValue);
+    // Obtén el valor existente del localStorage
+    const existingValue = localStorage.getItem("carro");
+    const existingObject = JSON.parse(existingValue);
+    existingObject[name] = quantity;
+    const updatedValue = JSON.stringify(existingObject);
+    localStorage.setItem("carro", updatedValue);
   };
 
   return (
@@ -39,10 +39,7 @@ export function ButtonCard(props) {
         <h3>{quantity}</h3>
         <button onClick={addAmount}>+</button>
       </div>
-      <button
-        className="buttonAmountSend"
-        onClick={sendToCart}
-      >
+      <button className="buttonAmountSend" onClick={sendToCart}>
         Añadir al Carrito
       </button>
     </>

@@ -17,6 +17,7 @@ import ScrollToTop from "./Components/Redux/ScrollToTop";
 import { Footer } from "./Components/Main/Footer/Footer";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import Productos from "./Components/Domiciles/NavigationMenu/productos";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -28,8 +29,9 @@ ReactDOM.render(
               <Route path="/" element={<Home />} />
               <Route path="/restaurantes" element={<Restaurants />} />
               <Route path="/domiciles/:id" element={<Unselect />} />
+              <Route path="/Productos" element={<Productos />} />
 
-              <Route
+              {/* <Route
                 path="/domiciles/pizzas"
                 element={<CategoryPizza json={Categories[0]} />}
               />
@@ -52,7 +54,7 @@ ReactDOM.render(
               <Route
                 path="/domiciles/drinks&others"
                 element={<DefaultCategory json={Categories[5]} />}
-              />
+              /> */}
 
               <Route
                 path="/domiciles/shopping_card"

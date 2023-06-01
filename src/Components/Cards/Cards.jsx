@@ -6,7 +6,7 @@ function Cards() {
   let [restaurantes, setRestaurante] = useState([]);
 
   const reqApi = async () => {
-    const api = await fetch("https://api.heflox.com/restaurants");
+    const api = await fetch("https://api.heflox.com/api/restaurants");
     const rest = await api.json();
     setRestaurante(rest);
     console.log(rest);
@@ -23,9 +23,9 @@ function Cards() {
           <div className="col-md-4" key={resturante.id}>
             <Card
               id={resturante.id}
-              title={resturante.nombre}
-              imageSource={resturante.url}
-              descripcion={resturante.descripcion}
+              title={resturante.name}
+              imageSource={resturante.image_url}
+              descripcion={resturante.speciality}
             />
           </div>
         ))}

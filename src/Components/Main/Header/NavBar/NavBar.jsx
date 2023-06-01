@@ -6,16 +6,20 @@ export function NavBar() {
   const [cart, setCart] = useState(0);
 
   useEffect(() => {
-      const interval = setInterval(() => {
-      const existingValue = localStorage.getItem("carro")
+    const interval = setInterval(() => {
+      const existingValue = localStorage.getItem("carro");
       const existingObject = JSON.parse(existingValue);
 
       // Paso 2: Obtiene los valores del objeto
       const values = Object.values(existingObject);
 
       // Paso 3: Suma los valores del arreglo
-      setCart(values.reduce((accumulator, currentValue) => accumulator + currentValue, 0));
-
+      setCart(
+        values.reduce(
+          (accumulator, currentValue) => accumulator + currentValue,
+          0
+        )
+      );
     }, 1000);
 
     return () => {
@@ -41,7 +45,7 @@ export function NavBar() {
             </Link>
           </li>
           <li>
-            <Link to="/Producto">
+            <Link to="/Productos">
               <i className="fa fa-burger"></i>
               <span className="nav-text">Productos</span>
             </Link>

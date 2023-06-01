@@ -14,7 +14,7 @@ export function NavegationMenu({ id }) {
         <div className="subTitulo">Postres</div>
         <Producto tipo={"postre"} id={id} />
         <div className="subTitulo">Bebidas</div>
-        <Producto tipo={"postre"} id={id} />
+        <Producto tipo={"bebida"} id={id} />
         <div className="subTitulo">Acompañamientos</div>
         <Producto tipo={"acompañamiento"} id={id} />
       </ul>

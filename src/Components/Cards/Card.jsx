@@ -5,7 +5,7 @@ function Card({ id, title, imageSource, descripcion }) {
   return (
     <div className="card text-center">
       <div className="Logo">
-        <img src={imageSource} alt="" />
+        <img src={imageSource} alt="" className="card-img-top" />
       </div>
 
       <div className="card-body">

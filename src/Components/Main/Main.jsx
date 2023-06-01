@@ -7,17 +7,17 @@ import { Footer } from "./Footer/Footer";
 
 export function Main() {
   const item = localStorage.getItem("carro");
-  if (item == null){
-    localStorage.setItem('carro', "{}");
+  if (item == null) {
+    localStorage.setItem("carro", "{}");
   }
-  
+
   return (
     <div>
-    <div className="container">
-      <Header />
-      <Outlet />
-    </div>
-    <Footer />
+      <div className="container">
+        <Header />
+        <Outlet />
+      </div>
+      {/* <Footer /> */}
     </div>
   );
 }
