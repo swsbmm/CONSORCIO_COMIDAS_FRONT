@@ -6,15 +6,11 @@ import { store } from "./Components/Redux/store";
 import { Routes, Route, Navigate, HashRouter } from "react-router-dom";
 import { Main } from "./Components/Main/Main";
 import { Home } from "./Components/Home/Home";
-import { Domiciles } from "./Components/Domiciles/Domiciles";
 import { Restaurants } from "./Components/Restaurant/Restaurant";
 import { Unselect } from "./Components/Domiciles/ProductCategories/Unselect/Unselect";
-import { DefaultCategory } from "./Components/Domiciles/ProductCategories/Defoult/Default";
-import { CategoryPizza } from "./Components/Domiciles/ProductCategories/Defoult/DefaultPizza";
 import { ShoppingCart } from "./Components/ShoppingCart/ShoppingCart";
-import { Categories } from "./Components/Data/Categories";
+import { SobreNosotros } from "./Components/SobreNosotros/SobreNosotros"; 
 import ScrollToTop from "./Components/Redux/ScrollToTop";
-import { Footer } from "./Components/Main/Footer/Footer";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Productos from "./Components/Domiciles/NavigationMenu/productos";
@@ -26,7 +22,9 @@ ReactDOM.render(
         <ScrollToTop>
           <Routes>
             <Route path="/" element={<Main />}>
-              <Route path="/" element={<Home />} />
+              
+              <Route path="/" element={<Home />} />                
+              <Route path="/SobreNosotros" element={<SobreNosotros />}></Route>
               <Route path="/restaurantes" element={<Restaurants />} />
               <Route path="/domiciles/:id" element={<Unselect />} />
               <Route path="/Productos" element={<Productos />} />

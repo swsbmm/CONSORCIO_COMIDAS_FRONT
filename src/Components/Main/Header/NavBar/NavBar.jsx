@@ -37,6 +37,12 @@ export function NavBar() {
               <span className="nav-text">Home</span>
             </Link>
           </li>
+          <li>
+            <Link to="/SobreNosotros">
+              <i className="fa fa-id-card "></i>
+              <span className="nav-text">Sobre Nosotros</span>
+            </Link>
+          </li>
 
           <li>
             <Link to="/restaurantes">

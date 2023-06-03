@@ -28,4 +28,18 @@ button {
   height: calc(100vh - 120px)
 }
 
+.container.min {
+  margin-top: 35px;
+  padding-right: 15px;
+  height: calc(100vh - 120px)
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Open+Sans:wght@600&display=swap");
+
+
+@media (width < 800px) {
+  .container.min {
+    margin-left: 35px;
+    height: calc(100vh - 120px)
+  }
+}

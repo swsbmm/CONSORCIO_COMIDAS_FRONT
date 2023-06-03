@@ -13,7 +13,7 @@ export function Main() {
 
   return (
     <div>
-      <div className="container">
+      <div className="container min">
         <Header />
         <Outlet />
       </div>

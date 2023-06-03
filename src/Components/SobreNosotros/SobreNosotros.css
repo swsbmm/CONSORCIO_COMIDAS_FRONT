@@ -1,0 +1,62 @@
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .integrantes{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding-left: 20px;
+  }
+  
+  .contenedor-nosotros {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: inherit;
+    }
+  
+  .contenedor-imagenes {
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .contenedor-nosotros-card {
+    width: 100%;
+    position: relative;
+    height: auto;
+    align-items: center;
+    margin-bottom: 50px;
+    display: contents;
+    margin: auto;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .contenedor-nosotros {
+        min-height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+        width: inherit;
+      }
+    
+    
+    .integrantes{
+        display: contents;
+    }
+  }
